@@ -1,0 +1,26 @@
+[core]
+	editor = vim 
+	excludesFile = ~/.gitignore
+[user]
+	name = Manuel Bergler
+	email = manue1@github.com
+	signingkey = 152211895CFA42E9
+[commit]
+	gpgsign = true
+[alias]
+	st = status --short -uno
+	ci = commit
+	ca = commit --amend
+	caa = commit -a --amend
+	br = branch
+	co = checkout
+	df = diff
+	lg = log -p --pretty=fuller --abbrev-commit
+[gpg]
+	program = gpg
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
