@@ -1,6 +1,5 @@
 [core]
 	editor = vim 
-	excludesFile = ~/.gitignore
 [user]
 	name = Manuel Bergler
 	email = manue1@github.com
@@ -20,6 +19,8 @@
 	program = gpg
 [url "git@github.com:"]
 	insteadOf = https://github.com/
+[push]
+	default = simple
 [pull]
 	rebase = false
 [init]
