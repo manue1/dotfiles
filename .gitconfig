@@ -1,11 +1,18 @@
 [core]
 	editor = vim 
+[column]
+	ui = auto
 [user]
 	name = Manuel Bergler
 	email = manue1@github.com
-	signingkey = 152211895CFA42E9
+	signingkey = 369CDC598B7723AF
+[branch]
+	sort = -committerdate
+[tag]
+	sort = version:refname
 [commit]
 	gpgsign = true
+	verbose = true
 [alias]
 	st = status --short -uno
 	ci = commit
@@ -19,9 +26,27 @@
 	program = gpg
 [url "git@github.com:"]
 	insteadOf = https://github.com/
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
 [push]
 	default = simple
+	autoSetupRemote = true
+	followTags = true
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
 [pull]
 	rebase = false
 [init]
 	defaultBranch = main
+[rerere]
+	enabled = true
+	autoupdate = true
+[rebase]
+	autoSquash = true
+	autoStash = true
+	updateRefs = true
