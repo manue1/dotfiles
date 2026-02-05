@@ -108,15 +108,15 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 function bp-ssh() {
-  ssh -A build@manue1-$1.service.bpdev-us-east-1.github.net
+  ssh -A build@manue1-$1.octoca.ts.net
 }
 
 function bp-code() {
-  code --remote ssh-remote+build@manue1-$1.service.bpdev-us-east-1.github.net /workspace/enterprise2
+  code --remote ssh-remote+build@manue1-$1.octoca.ts.net /workspace/enterprise2
 }
 
 function bp-dev() {
-  code --remote ssh-remote+build@manue1-$1.service.bpdev-us-east-1.github.net /workspace/enterprise2 && ssh -A build@manue1-$1.service.bpdev-us-east-1.github.net
+  code --remote ssh-remote+build@manue1-$1.octoca.ts.net /workspace/enterprise2 && ssh -A build@manue1-$1.octoca.ts.net
 }
 
 # Go setup
@@ -133,3 +133,4 @@ eval "$(rbenv init -)"
 [[ -s "/Users/manue1/.gvm/scripts/gvm" ]] && source "/Users/manue1/.gvm/scripts/gvm"
 
 export PATH="/opt/homebrew/bin:$PATH"
+eval "$(~/.local/bin/mise activate zsh)"

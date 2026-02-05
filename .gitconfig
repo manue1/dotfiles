@@ -5,7 +5,7 @@
 [user]
 	name = Manuel Bergler
 	email = manue1@github.com
-	signingkey = 369CDC598B7723AF
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINJ9iozddSODYwqsFUD2TptFETYAiTjgGPIFsZTAWSi0
 [branch]
 	sort = -committerdate
 [tag]
@@ -50,3 +50,5 @@
 	autoSquash = true
 	autoStash = true
 	updateRefs = true
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
