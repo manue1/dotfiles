@@ -24,6 +24,7 @@
 	lg = log -p --pretty=fuller --abbrev-commit
 [gpg]
 	program = gpg
+	format = ssh
 [url "git@github.com:"]
 	insteadOf = https://github.com/
 [diff]
